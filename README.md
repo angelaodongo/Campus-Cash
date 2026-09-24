@@ -33,10 +33,7 @@ Write a Python program called campuscash.py that acts as a simple command-line s
 The program should allow the user to:
 
 - Set a budget.
-- Add expenses.
 - View the expenses they have recorded.
-- Calculate their total spending.
 - See their remaining budget.
 - Exit the program.
 
-* NOTE * The program should continue displaying the menu until the user chooses to exit.
