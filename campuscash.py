@@ -23,8 +23,7 @@ def menu(b):
     match choice:
         case 1:
             expense = int(input("Enter your expense amount: "))
-            total_spend = total_spend + expense
-            print(f"Your total spend is: {total_spend}")
+            print(f"Your total spend is: {expense}")
         case 2:
             expense = int(input("Enter your expense amount: "))
             remaining = b - expense
