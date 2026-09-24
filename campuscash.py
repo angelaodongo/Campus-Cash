@@ -24,10 +24,12 @@ def menu(b):
         case 1:
             expense = int(input("Enter your expense amount: "))
             print(f"Your total spend is: {expense}")
+            input("Press enter to continue...")
         case 2:
             expense = int(input("Enter your expense amount: "))
             remaining = b - expense
             print(f"Your remaining budget is: {remaining}")
+            input("Press enter to continue...")
         case 3:
             print("Goodbye!")
         case _:
