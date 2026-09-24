@@ -13,29 +13,23 @@ def menu(b):
     print(""" 
     What would you like to do?
 
-    1. Add an expense
-    2. View total spending
-    3. View remaining budget
-    4. Exit
+    1. View total spending
+    2. View remaining budget
+    3. Exit
     """)
 
     choice = int(input("Enter your choice: "))
 
     match choice:
         case 1:
-            expense = int(input("Enter expense amount: "))
-            description = input("Enter expense description: ")
-            print(expense, description)
-        case 2:
             expense = int(input("Enter your expense amount: "))
             total_spend = total_spend + expense
             print(f"Your total spend is: {total_spend}")
-        case 3:
+        case 2:
             expense = int(input("Enter your expense amount: "))
-            total_spend = total_spend + expense
-            remaining = b - total_spend
+            remaining = b - expense
             print(f"Your remaining budget is: {remaining}")
-        case 4:
+        case 3:
             print("Goodbye!")
         case _:
             print("Invalid input. Please try again.")
